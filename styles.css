@@ -1,0 +1,317 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    max-width: 1440px;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color:#F2F2F2;
+}
+.container{
+   margin: 0 auto;
+   max-width: 100%;
+
+
+}
+
+h1{
+    font-size: 3.5rem;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 5em;
+   
+
+}
+
+.hero-area{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5em;
+   
+}
+
+.btn{
+    color:white;
+    background:#13183F;
+    padding: .7em 2.5em;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-hero{
+    background-image:linear-gradient(#F02AA6,#FF6F48);
+}
+
+.btn-hero:hover{
+    background-color:#FFA7C3;
+}
+
+.hero-p{
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: #83869A;
+    margin-top: -3em;
+    margin-bottom:3em ;
+}
+.hero-image{
+  width: 1440px;
+  margin-top:-10em;
+  overflow-x: hidden; 
+  
+}
+
+#tablet-image{
+    display: none;
+}
+#mobile-image{
+    display: none;
+}
+
+
+
+.hero-text{
+margin-top: 12em;
+}
+
+
+.navbutton{
+padding-right: 9em;
+}
+
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+
+.cards li:first-of-type{
+   background-image:linear-gradient(#F02AA6,#FF6F48); 
+   color: white;
+}
+
+.inner{
+     margin-bottom: 0;
+
+}
+
+
+.inner p{
+    color:#83869A;
+    font-size: 1.2rem;
+    min-height: 155px;
+   
+}
+.inner a{
+    color:#F02AA6; 
+    text-decoration: none;
+    margin-top: 1em;
+
+}
+
+li img{
+    margin-top: -2em;
+}
+
+
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px; 
+    grid-row-gap:40px;
+    list-style: none;
+    margin-top: 5em;
+    padding-left: 0;
+    margin-left: 5em;
+    margin-right: 5em;
+    
+}
+.cards li{
+    
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+
+footer{
+    background-color:#13183F;
+    margin-bottom: 0;
+    height: 80px;
+    padding: 0;
+   margin-top: 7em;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 5em;
+}
+
+.btn-footer{
+    background-image: linear-gradient(#4851FF,#F02AA6);
+}
+
+
+
+@media (max-width:1073px){
+   
+.cards-section{
+    margin: 0;
+}
+.cards{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    justify-content:center;
+    grid-column-gap:;
+    margin: 3em 1em;
+    margin-top: 3em;
+}
+
+.hero-text{
+    margin-top: 7em;
+    margin-left: 2em;
+}
+
+h1{
+    font-size: 2.5rem;
+    padding-bottom:.5em;
+}
+    
+
+
+#tablet-image{
+display:inline;
+margin-top: 2em;
+}
+
+.navbutton{
+    padding-right: 11em;
+    }
+
+#desktop-image{
+display: none;
+}
+footer{
+    padding: 1em 1em;
+}
+
+
+}
+
+@media (max-width:768px){
+   
+    .hero-text{
+        margin-top: 3em;
+        margin-left: 2em;
+    }
+    .navbutton{
+        padding-right: 1em;
+        }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+       padding: 2em 2em;
+       
+}
+    h1{
+        font-size: 2.2rem;    
+    }
+        
+    
+    .hero-area{
+       
+        margin-left: 0;
+       
+    }
+
+    #tablet-image{
+       margin-left:2.5em;
+        }
+}
+
+
+@media (max-width:748px){
+    .cards{
+        display: grid;
+        grid-template-columns:1fr;
+        margin: .5em;
+    }
+   
+    .inner p{
+        min-height: auto;
+    }
+
+}
+
+
+
+
+@media(max-width:686px){
+
+#tablet-image{
+display: none;
+}
+
+
+.hero-text{
+    width: 100%;
+}
+#mobile-image{
+    display: block;
+    margin-left: -3em;
+   
+}
+
+}
+
+
+@media (min-width:320px) and (max-width:674px){
+    .navbutton{
+        
+      padding: 0;
+      padding-top: .3em;
+     
+       
+    }
+    .cards{
+       
+        
+       margin: 1em;
+        
+    }
+
+    footer{
+       
+       padding: .5em;
+       margin: 0;
+
+       
+      
+    
+    }
+    .navbar{
+        padding: 1.5em 1em; 
+        margin: 0;
+    }
+
+}
